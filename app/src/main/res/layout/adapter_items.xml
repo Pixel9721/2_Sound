@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/medium_margin">
+
+    <ImageView
+        android:id="@+id/item_album"
+        android:layout_width="118dp"
+        android:layout_height="132dp"
+        android:src="@drawable/item_enfoires" />
+
+    <RelativeLayout
+        android:layout_width="256dp"
+        android:layout_height="63dp"
+        android:layout_margin="@dimen/medium_margin">
+
+        <TextView
+            android:id="@+id/item_nomAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/item_default_nomAlbum"
+            android:textColor="@color/color_nom_album"
+            android:textSize="@dimen/nom_Album" />
+
+        <TextView
+            android:id="@+id/item_prix"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_below="@+id/item_nomAlbum"
+            android:layout_marginTop="0dp"
+            android:text="@string/item_default_prix"
+            android:textSize="@dimen/titre_album" />
+    </RelativeLayout>
+
+</LinearLayout>
